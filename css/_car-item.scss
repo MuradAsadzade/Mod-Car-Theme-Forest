@@ -1,0 +1,105 @@
+#cars{
+    padding: 120px 0;
+    background-color: gray;
+    .car-item{
+        box-shadow: 0 1px 2px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 5%);
+        border-radius: 15px;
+        background-color: #fff;
+        overflow: hidden;
+
+        .car-item-img{
+            padding: 12px 12px 0;
+            .car-img{
+                overflow: hidden;
+            }
+            &:hover{
+                img{
+                    border-radius: 15px;
+                    transform: scale(1.1);
+                }
+            }
+            img{
+                transition: .5s ease;
+            }
+        }
+        .car-item-text{
+            padding: 0 20px 20px;
+            p{
+                font-size: 14px;
+                color: #5e6d77;
+                font-family: sans-serif;
+                margin-top: 20px;
+            }
+            a{
+                font-size: 18px;
+                color: #232323;
+                font-weight: 700;
+                display: block;
+                padding-bottom: 15px;
+            }
+            .car-item-icon{
+                ul{
+                    li{
+                        position: relative;
+                        flex-direction: column;
+                        margin-right: 15px;
+                        &:hover{
+                            .whenIHover{
+                                opacity: 1;
+                            visibility: visible;
+                            }
+                        }
+                        i{
+                            padding: 12px;
+                            border: 1px solid #dedede;
+                            border-radius: 10px;
+                        }
+                        span{
+                            font-size: 14px;
+                            color: #232323;
+                        }
+                        .whenIHover{
+                            opacity: 0;
+                            visibility: hidden;
+                            transition: .5s ease;
+                        }
+                        .car-icon-hover{
+                            position: absolute;
+                            top: -50%;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            background-color: #232323;
+                            opacity: 0.9;
+                            color: #fff;
+                            font-size: 14px;
+                            font-weight: bold;
+                            padding: 4px 8px;
+                            border-radius: 5px;
+                            white-space: nowrap;
+                        }
+                        .triangle{
+                                position: absolute;
+                                top: -5%;
+                                left: 50%;
+                                width: 0px;
+                                height: 0px;
+                                opacity: 0.9;
+                                border-bottom: 10px solid transparent;
+                                border-top: 10px solid #232323;
+                                border-left: 10px solid transparent;
+                                border-right: 10px solid transparent;
+                                transform: translateX(-50%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px){
+    .triangle{
+        top: -6% !important;
+    }
+}
+

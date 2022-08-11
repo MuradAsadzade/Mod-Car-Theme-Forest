@@ -1,0 +1,194 @@
+#header {
+  border-bottom: 1px solid #dedede;
+}
+#header .navigation-menu .logo .bars {
+  display: none;
+}
+#header .navigation-menu .logo .bars i {
+  color: #232323;
+  font-size: 25px;
+}
+#header .navigation-menu .nav-menu ul li a {
+  font-family: sans-serif;
+  color: #232323;
+  display: block;
+  padding: 35px 30px;
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  transition: 0.5s ease;
+}
+#header .navigation-menu .nav-menu ul li a.active-a {
+  color: #3b71fe;
+}
+#header .navigation-menu .nav-menu ul li a:hover {
+  color: #3b71fe;
+}
+#header .navigation-menu .nav-icon ul li a {
+  font-family: sans-serif;
+  color: #232323;
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+}
+#header .navigation-menu .nav-icon ul li a.menu-icon {
+  padding: 13px 14px;
+  border-radius: 50%;
+  border: 1px solid #dedede;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.05);
+  margin-left: 20px;
+}
+
+@media (max-width: 992px) {
+  #header {
+    padding: 18px 30px;
+  }
+  #header .navigation-menu .bars {
+    display: block !important;
+    margin-right: 50px;
+  }
+  #header .navigation-menu .nav-menu {
+    display: none;
+  }
+  #header .navigation-menu .nav-icon ul li:first-child {
+    display: none;
+  }
+  #header .navigation-menu .nav-icon ul .menu-icon {
+    font-size: 25px;
+    padding: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+}
+@media (max-width: 768px) {
+  #header .navigation-menu .logo {
+    justify-content: space-between;
+    width: 55%;
+  }
+}
+@media (max-width: 576px) {
+  #header {
+    padding: 18px;
+  }
+  #header .navigation-menu .logo .bars {
+    font-size: 20px !important;
+  }
+  #header .navigation-menu .nav-icon ul li a {
+    font-size: 20px !important;
+  }
+  #header .navigation-menu .nav-icon ul li a.menu-icon {
+    margin-left: 10px !important;
+  }
+}
+#cars {
+  padding: 120px 0;
+  background-color: gray;
+}
+#cars .car-item {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.05);
+  border-radius: 15px;
+  background-color: #fff;
+  overflow: hidden;
+}
+#cars .car-item .car-item-img {
+  padding: 12px 12px 0;
+}
+#cars .car-item .car-item-img .car-img {
+  overflow: hidden;
+}
+#cars .car-item .car-item-img:hover img {
+  border-radius: 15px;
+  transform: scale(1.1);
+}
+#cars .car-item .car-item-img img {
+  transition: 0.5s ease;
+}
+#cars .car-item .car-item-text {
+  padding: 0 20px 20px;
+}
+#cars .car-item .car-item-text p {
+  font-size: 14px;
+  color: #5e6d77;
+  font-family: sans-serif;
+  margin-top: 20px;
+}
+#cars .car-item .car-item-text a {
+  font-size: 18px;
+  color: #232323;
+  font-weight: 700;
+  display: block;
+  padding-bottom: 15px;
+}
+#cars .car-item .car-item-text .car-item-icon ul li {
+  position: relative;
+  flex-direction: column;
+  margin-right: 15px;
+}
+#cars .car-item .car-item-text .car-item-icon ul li:hover .whenIHover {
+  opacity: 1;
+  visibility: visible;
+}
+#cars .car-item .car-item-text .car-item-icon ul li i {
+  padding: 12px;
+  border: 1px solid #dedede;
+  border-radius: 10px;
+}
+#cars .car-item .car-item-text .car-item-icon ul li span {
+  font-size: 14px;
+  color: #232323;
+}
+#cars .car-item .car-item-text .car-item-icon ul li .whenIHover {
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s ease;
+}
+#cars .car-item .car-item-text .car-item-icon ul li .car-icon-hover {
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #232323;
+  opacity: 0.9;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 4px 8px;
+  border-radius: 5px;
+  white-space: nowrap;
+}
+#cars .car-item .car-item-text .car-item-icon ul li .triangle {
+  position: absolute;
+  top: -5%;
+  left: 50%;
+  width: 0px;
+  height: 0px;
+  opacity: 0.9;
+  border-bottom: 10px solid transparent;
+  border-top: 10px solid #232323;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  transform: translateX(-50%);
+}
+
+@media (max-width: 576px) {
+  .triangle {
+    top: -6% !important;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}/*# sourceMappingURL=style.css.map */
