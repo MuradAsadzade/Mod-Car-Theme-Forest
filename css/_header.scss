@@ -13,6 +13,38 @@
         .nav-menu{
             ul{
                 li{
+                    &.list{
+                        position: relative;
+                        &:hover{
+                            .dropdown-menu{
+                                opacity: 1;
+                                visibility: visible;
+
+                               
+                            }
+                        }
+                        .dropdown-menu{
+                            background-color: white;
+                            position: absolute;
+                            top:100%;
+                            left: 0;
+                            display: block;
+                            opacity: 0;
+                            visibility: hidden;
+                            padding: 15px;
+                            transition: .5s ease-in-out;
+                            white-space: nowrap;
+                            a{
+                                padding: 15px 20px;
+                                transition: .5s ease-in-out;
+                                &:hover{
+                                    
+                                        color: #3b71fe;
+                                    
+                                }
+                            }
+                        }
+                    }
                     a{
                         font-family: sans-serif;
                         color: #232323;
@@ -29,6 +61,7 @@
                         &:hover{
                             color: #3b71fe;
                         }
+                       
                     }
                 }
             }

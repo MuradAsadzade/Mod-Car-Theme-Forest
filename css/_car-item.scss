@@ -1,16 +1,61 @@
 #cars{
     padding: 120px 0;
-    background-color: gray;
+    // background-color: gray;
+    
     .car-item{
         box-shadow: 0 1px 2px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 5%);
         border-radius: 15px;
         background-color: #fff;
         overflow: hidden;
-
+        margin-bottom: 30px;
         .car-item-img{
             padding: 12px 12px 0;
             .car-img{
                 overflow: hidden;
+                // border: 2px solid red;
+                position: relative;
+                padding: 25px;
+                background-color: #F3F4F6;
+                p{
+                    display: inline-block;
+                    position: absolute;
+                    top:5px;
+                    left: 2px;
+                    background-color: #3B71FE;
+                    color: white;
+                    padding: 6px;
+                    font-weight: bold;
+                    border-radius: 5px;
+
+                }
+                span{
+                    color: white;
+                    display: inline-block;
+                    position: absolute;
+                    background-color: #CC0033;
+                    top:50px;
+                    left: 2px;
+                    border-radius: 5px;
+                    padding: 8px;
+                }
+                i{
+                    position: absolute;
+                    right: 15px;
+                    top:15px;
+                    color: #B5B5B7;
+                    font-size: 25px;
+                }
+                .profile-image{
+                    position: absolute;
+                    top:78%;
+                    overflow: visible;
+                    right: 08%;
+                    img{
+                        border-radius: 50%;
+                        width: 70%;
+                        overflow: visible;
+                    }
+                }
             }
             &:hover{
                 img{

@@ -3,10 +3,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mod Car &#8211; Travel Booking WordPress Theme</title>
     <link rel="stylesheet" href="vendors/bootstrap.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="https://modcar.travelerwp.com/wp-content/uploads/2022/05/Group-3145.png">
 </head>
 <body>
     <header id="header">
@@ -24,9 +25,37 @@
                     <ul class="d-flex">
                         <li><a class="active-a" href="index.html">home</a></li>
                         <li><a href="about.html">about</a></li>
-                        <li><a href="#">listing <i class="fa-solid fa-angle-down"></i></a></li>
-                        <li><a href="#">car <i class="fa-solid fa-angle-down"></i></a></li>
-                        <li><a href="#">pages <i class="fa-solid fa-angle-down"></i></a></li>
+                        <li class="list"><a  href="#">listing <i class="fa-solid fa-angle-down"></i></a>
+                            <div class="dropdown-menu">
+                                <ul class="m-0 p-0">
+                                    <li><a href="#">Car Search Topbar</a> </li>
+                                    <li><a href="#">Car Search Sidebar</a> </li>
+                                </ul>
+                            </div>
+                        
+                        </li>
+                        <li class="list"><a href="#">car <i class="fa-solid fa-angle-down"></i></a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a href="#">Detail Car 1</a> </li>
+                                    <li><a href="#">Detail Car 2</a> </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="list"><a href="#">pages <i class="fa-solid fa-angle-down"></i></a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a href="#">Blog</a> </li>
+                                    <li><a href="#">Become Local Expert</a> </li>
+                                    <li><a href="#">FAQ</a> </li>
+                                    <li><a href="#">Function:Login</a> </li>
+                                    <li><a href="#">Function:Wishlists</a> </li>
+                                    <li><a href="#">404</a></li>
+                                    <li><a href="#">Destination</a> </li>
+                                    <li><a href="#">Function:Register</a> </li>
+                                </ul>
+                            </div>
+                        </li>
                         <li><a href="#">contact</a></li>
                     </ul>
                 </div>
@@ -43,12 +72,26 @@
     
     <section id="cars">
         <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+            <div class="txt-left">
+                <h1>Choose your car</h1>
+            </div>
+            <div class="txt-right">
+                <a href="#">View All</a>
+            </div>
+        </div>
             <div class="row">
                 <div class="col-lg-3">
                     <div class="car-item">
                         <div class="car-item-img">
                             <div class="car-img">
-                                <img class="img-fluid" src="https://modcar.travelerwp.com/wp-content/uploads/2022/05/Group-3341-450x300.jpg" alt="">
+                                <img class="img-fluid" src="https://modcar.travelerwp.com/wp-content/uploads/2022/05/Group-3354-2-5-450x300.jpg" alt="">
+                                <p>Featured</p>
+                                <span>-10%</span>
+                                <i title="add to wishlist" class="fa-solid fa-heart"></i>
+                                <div class="profile-image">
+                                    <img src="https://modcar.travelerwp.com/wp-content/uploads/bfi_thumb/32-1-3fv0hmzje1rc4cmrfsvwu8.jpg" alt="">
+                                </div>
                             </div>
                         </div>
                         <div class="car-item-text">
@@ -74,7 +117,7 @@
                                     <li class="d-flex align-items-center">
                                         <i class="fa-solid fa-suitcase-rolling"></i><div>4</div>
                                         <div class="whenIHover">
-                                            <div class="car-icon-hover">Baggege</div>
+                                            <div class="car-icon-hover">Baggage</div>
                                             <div class="triangle"></div>
                                         </div>
                                     </li>
@@ -93,10 +136,599 @@
                             </div>
                         </div>
                     </div>
+                    
                 </div>
+                <div class="col-lg-3">
+                    <div class="car-item">
+                        <div class="car-item-img">
+                            <div class="car-img">
+                                <img class="img-fluid" src="https://modcar.travelerwp.com/wp-content/uploads/2022/05/Group-3354-2-5-450x300.jpg" alt="">
+                               
+                                <i title="add to wishlist" class="fa-solid fa-heart"></i>
+                                <div class="profile-image">
+                                    <img src="https://modcar.travelerwp.com/wp-content/uploads/bfi_thumb/32-1-3fv0hmzje1rc4cmrfsvwu8.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="car-item-text">
+                            <p>Convertibles</p>
+                            <a href="#">Kia K5 EX Sedan</a>
+                            <div class="car-item-icon">
+                                <ul class="d-flex">
+                                    <li class="d-flex align-items-center">
+                                        <i class="fa-solid fa-users"></i><span>4</span>
+                                        <div class="whenIHover">
+                                            <div class="car-icon-hover">Passenger</div>
+                                            <div class="triangle"></div>
+                                        </div>
+                                       
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <i class="fa-solid fa-gear"></i><div>manual</div>
+                                        <div class="whenIHover">
+                                            <div class="car-icon-hover">Gear Shift</div>
+                                            <div class="triangle"></div>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <i class="fa-solid fa-suitcase-rolling"></i><div>4</div>
+                                        <div class="whenIHover">
+                                            <div class="car-icon-hover">Baggage</div>
+                                            <div class="triangle"></div>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <i class="fa-solid fa-door-closed"></i><div>4</div>
+                                        <div class="whenIHover">
+                                            <div class="car-icon-hover">Door</div>
+                                            <div class="triangle"></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <hr>
+                            <div class="car-item-price">
+                                <p>€20.00/ <span>hour</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-lg-3">
+                    <div class="car-item">
+                        <div class="car-item-img">
+                            <div class="car-img">
+                                <img class="img-fluid" src="https://modcar.travelerwp.com/wp-content/uploads/2022/05/Group-3354-2-5-450x300.jpg" alt="">
+                                
+                                <i title="add to wishlist" class="fa-solid fa-heart"></i>
+                                <div class="profile-image">
+                                    <img src="https://modcar.travelerwp.com/wp-content/uploads/bfi_thumb/32-1-3fv0hmzje1rc4cmrfsvwu8.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="car-item-text">
+                            <p>Convertibles</p>
+                            <a href="#">Kia K5 EX Sedan</a>
+                            <div class="car-item-icon">
+                                <ul class="d-flex">
+                                    <li class="d-flex align-items-center">
+                                        <i class="fa-solid fa-users"></i><span>4</span>
+                                        <div class="whenIHover">
+                                            <div class="car-icon-hover">Passenger</div>
+                                            <div class="triangle"></div>
+                                        </div>
+                                       
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <i class="fa-solid fa-gear"></i><div>manual</div>
+                                        <div class="whenIHover">
+                                            <div class="car-icon-hover">Gear Shift</div>
+                                            <div class="triangle"></div>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <i class="fa-solid fa-suitcase-rolling"></i><div>4</div>
+                                        <div class="whenIHover">
+                                            <div class="car-icon-hover">Baggage</div>
+                                            <div class="triangle"></div>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <i class="fa-solid fa-door-closed"></i><div>4</div>
+                                        <div class="whenIHover">
+                                            <div class="car-icon-hover">Door</div>
+                                            <div class="triangle"></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <hr>
+                            <div class="car-item-price">
+                                <p>€20.00/ <span>hour</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-lg-3">
+                    <div class="car-item">
+                        <div class="car-item-img">
+                            <div class="car-img">
+                                <img class="img-fluid" src="https://modcar.travelerwp.com/wp-content/uploads/2022/05/Group-3354-2-5-450x300.jpg" alt="">
+                                
+                                <i title="add to wishlist" class="fa-solid fa-heart"></i>
+                                <div class="profile-image">
+                                    <img src="https://modcar.travelerwp.com/wp-content/uploads/bfi_thumb/32-1-3fv0hmzje1rc4cmrfsvwu8.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="car-item-text">
+                            <p>Convertibles</p>
+                            <a href="#">Kia K5 EX Sedan</a>
+                            <div class="car-item-icon">
+                                <ul class="d-flex">
+                                    <li class="d-flex align-items-center">
+                                        <i class="fa-solid fa-users"></i><span>4</span>
+                                        <div class="whenIHover">
+                                            <div class="car-icon-hover">Passenger</div>
+                                            <div class="triangle"></div>
+                                        </div>
+                                       
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <i class="fa-solid fa-gear"></i><div>manual</div>
+                                        <div class="whenIHover">
+                                            <div class="car-icon-hover">Gear Shift</div>
+                                            <div class="triangle"></div>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <i class="fa-solid fa-suitcase-rolling"></i><div>4</div>
+                                        <div class="whenIHover">
+                                            <div class="car-icon-hover">Baggage</div>
+                                            <div class="triangle"></div>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <i class="fa-solid fa-door-closed"></i><div>4</div>
+                                        <div class="whenIHover">
+                                            <div class="car-icon-hover">Door</div>
+                                            <div class="triangle"></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <hr>
+                            <div class="car-item-price">
+                                <p>€20.00/ <span>hour</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-lg-3">
+                    <div class="car-item">
+                        <div class="car-item-img">
+                            <div class="car-img">
+                                <img class="img-fluid" src="https://modcar.travelerwp.com/wp-content/uploads/2022/05/Group-3354-2-5-450x300.jpg" alt="">
+                               
+                                <i title="add to wishlist" class="fa-solid fa-heart"></i>
+                                <div class="profile-image">
+                                    <img src="https://modcar.travelerwp.com/wp-content/uploads/bfi_thumb/32-1-3fv0hmzje1rc4cmrfsvwu8.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="car-item-text">
+                            <p>Convertibles</p>
+                            <a href="#">Kia K5 EX Sedan</a>
+                            <div class="car-item-icon">
+                                <ul class="d-flex">
+                                    <li class="d-flex align-items-center">
+                                        <i class="fa-solid fa-users"></i><span>4</span>
+                                        <div class="whenIHover">
+                                            <div class="car-icon-hover">Passenger</div>
+                                            <div class="triangle"></div>
+                                        </div>
+                                       
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <i class="fa-solid fa-gear"></i><div>manual</div>
+                                        <div class="whenIHover">
+                                            <div class="car-icon-hover">Gear Shift</div>
+                                            <div class="triangle"></div>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <i class="fa-solid fa-suitcase-rolling"></i><div>4</div>
+                                        <div class="whenIHover">
+                                            <div class="car-icon-hover">Baggage</div>
+                                            <div class="triangle"></div>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <i class="fa-solid fa-door-closed"></i><div>4</div>
+                                        <div class="whenIHover">
+                                            <div class="car-icon-hover">Door</div>
+                                            <div class="triangle"></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <hr>
+                            <div class="car-item-price">
+                                <p>€20.00/ <span>hour</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-lg-3">
+                    <div class="car-item">
+                        <div class="car-item-img">
+                            <div class="car-img">
+                                <img class="img-fluid" src="https://modcar.travelerwp.com/wp-content/uploads/2022/05/Group-3354-2-5-450x300.jpg" alt="">
+                               
+                                <i title="add to wishlist" class="fa-solid fa-heart"></i>
+                                <div class="profile-image">
+                                    <img src="https://modcar.travelerwp.com/wp-content/uploads/bfi_thumb/32-1-3fv0hmzje1rc4cmrfsvwu8.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="car-item-text">
+                            <p>Convertibles</p>
+                            <a href="#">Kia K5 EX Sedan</a>
+                            <div class="car-item-icon">
+                                <ul class="d-flex">
+                                    <li class="d-flex align-items-center">
+                                        <i class="fa-solid fa-users"></i><span>4</span>
+                                        <div class="whenIHover">
+                                            <div class="car-icon-hover">Passenger</div>
+                                            <div class="triangle"></div>
+                                        </div>
+                                       
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <i class="fa-solid fa-gear"></i><div>manual</div>
+                                        <div class="whenIHover">
+                                            <div class="car-icon-hover">Gear Shift</div>
+                                            <div class="triangle"></div>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <i class="fa-solid fa-suitcase-rolling"></i><div>4</div>
+                                        <div class="whenIHover">
+                                            <div class="car-icon-hover">Baggage</div>
+                                            <div class="triangle"></div>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <i class="fa-solid fa-door-closed"></i><div>4</div>
+                                        <div class="whenIHover">
+                                            <div class="car-icon-hover">Door</div>
+                                            <div class="triangle"></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <hr>
+                            <div class="car-item-price">
+                                <p>€20.00/ <span>hour</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-lg-3">
+                    <div class="car-item">
+                        <div class="car-item-img">
+                            <div class="car-img">
+                                <img class="img-fluid" src="https://modcar.travelerwp.com/wp-content/uploads/2022/05/Group-3354-2-5-450x300.jpg" alt="">
+                                
+                                <i title="add to wishlist" class="fa-solid fa-heart"></i>
+                                <div class="profile-image">
+                                    <img src="https://modcar.travelerwp.com/wp-content/uploads/bfi_thumb/32-1-3fv0hmzje1rc4cmrfsvwu8.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="car-item-text">
+                            <p>Convertibles</p>
+                            <a href="#">Kia K5 EX Sedan</a>
+                            <div class="car-item-icon">
+                                <ul class="d-flex">
+                                    <li class="d-flex align-items-center">
+                                        <i class="fa-solid fa-users"></i><span>4</span>
+                                        <div class="whenIHover">
+                                            <div class="car-icon-hover">Passenger</div>
+                                            <div class="triangle"></div>
+                                        </div>
+                                       
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <i class="fa-solid fa-gear"></i><div>manual</div>
+                                        <div class="whenIHover">
+                                            <div class="car-icon-hover">Gear Shift</div>
+                                            <div class="triangle"></div>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <i class="fa-solid fa-suitcase-rolling"></i><div>4</div>
+                                        <div class="whenIHover">
+                                            <div class="car-icon-hover">Baggage</div>
+                                            <div class="triangle"></div>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <i class="fa-solid fa-door-closed"></i><div>4</div>
+                                        <div class="whenIHover">
+                                            <div class="car-icon-hover">Door</div>
+                                            <div class="triangle"></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <hr>
+                            <div class="car-item-price">
+                                <p>€20.00/ <span>hour</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-lg-3">
+                    <div class="car-item">
+                        <div class="car-item-img">
+                            <div class="car-img">
+                                <img class="img-fluid" src="https://modcar.travelerwp.com/wp-content/uploads/2022/05/Group-3354-2-5-450x300.jpg" alt="">
+                               
+                                <i title="add to wishlist" class="fa-solid fa-heart"></i>
+                                <div class="profile-image">
+                                    <img src="https://modcar.travelerwp.com/wp-content/uploads/bfi_thumb/32-1-3fv0hmzje1rc4cmrfsvwu8.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="car-item-text">
+                            <p>Convertibles</p>
+                            <a href="#">Kia K5 EX Sedan</a>
+                            <div class="car-item-icon">
+                                <ul class="d-flex">
+                                    <li class="d-flex align-items-center">
+                                        <i class="fa-solid fa-users"></i><span>4</span>
+                                        <div class="whenIHover">
+                                            <div class="car-icon-hover">Passenger</div>
+                                            <div class="triangle"></div>
+                                        </div>
+                                       
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <i class="fa-solid fa-gear"></i><div>manual</div>
+                                        <div class="whenIHover">
+                                            <div class="car-icon-hover">Gear Shift</div>
+                                            <div class="triangle"></div>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <i class="fa-solid fa-suitcase-rolling"></i><div>4</div>
+                                        <div class="whenIHover">
+                                            <div class="car-icon-hover">Baggage</div>
+                                            <div class="triangle"></div>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <i class="fa-solid fa-door-closed"></i><div>4</div>
+                                        <div class="whenIHover">
+                                            <div class="car-icon-hover">Door</div>
+                                            <div class="triangle"></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <hr>
+                            <div class="car-item-price">
+                                <p>€20.00/ <span>hour</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                 
+          
             </div>
         </div>
     </section>
+<section class="find">
+    <h1>Find cars by type</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2">
+                <img src="https://modcar.travelerwp.com/wp-content/uploads/2022/05/Rectangle-2.jpg" alt="">
+                <p>SUVs</p>
+            </div>
+            <div class="col-lg-2">
+                <img src="https://modcar.travelerwp.com/wp-content/uploads/2022/05/Rectangle-2.jpg" alt="">
+                <p>Sedans</p>
+            </div>
+            <div class="col-lg-2">
+                <img src="https://modcar.travelerwp.com/wp-content/uploads/2022/05/Rectangle-2.jpg" alt="">
+                <p>Trucks</p>
+            </div>
+            <div class="col-lg-2">
+                <img src="https://modcar.travelerwp.com/wp-content/uploads/2022/05/Rectangle-2.jpg" alt="">
+                <p>Coupes</p>
+            </div>
+            <div class="col-lg-2">
+                <img src="https://modcar.travelerwp.com/wp-content/uploads/2022/05/Rectangle-2.jpg" alt="">
+                <p>Hatchbacks</p>
+            </div>
+            <div class="col-lg-2">
+                <img src="https://modcar.travelerwp.com/wp-content/uploads/2022/05/Rectangle-2.jpg" alt="">
+                <p>Minivans</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="best_car">
+    <div class="best_text">
+        <h1>Find the best car for you.</h1>
+    </div>
+   
+    <div class="best_box d-flex justify-content-between align-items-center">
+        <div class="col-lg-3">
+        <div class="best-left d-flex align-items-center justify-content-between">
+            <i class="fa-solid fa-location-dot"></i>
+            <div class="div-right">
+            <p>Location</p>
+            <input type="text" placeholder="Where are you going?"></div>
+        </div></div>
+        <div class="col-lg-3">
+        <div class="best-left d-flex align-items-center justify-content-between">
+            <i class="fa-solid fa-location-dot"></i>
+            <div class="div-right">
+            <p>Pick-up</p>
+            <input  style="cursor:pointer;" type="text" placeholder="Add date,add time"></div>
+        </div></div>
+        <div class="col-lg-3">
+        <div class="best-left d-flex align-items-center justify-content-between">
+            <i class="fa-solid fa-location-dot"></i>
+            <div class="div-right">
+            <p>Drop-off</p>
+            <input style="cursor:pointer;" type="text" placeholder="Add date,add time"></div>
+        </div></div>
+        <div class="col-lg-2">
+        <div class="search">
+        <a href="#"><i class="fa-solid fa-magnifying-glass"></i>Search</a></div>
+    </div></div>
+</section>
+<section class="article">
+    <div class="container">
+    <div class="article-top">
+        <div class="d-flex justify-content-between align-items-center">
+            <div class="article-text">
+            <h1>Articles & tips</h1></div>
+                <div class="article-icons">
+                    <i class="fa-solid fa-angle-left"></i>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+        </div></div>
+        <div class="article-images">
+            <div class="row d-flex justify-content-between align-items-center">
+                <div class="col-lg-3">
+                    <div class="article-box">
+                        <div class="art-image">
+                        <div class="art-img">
+                            <img src="https://modcar.travelerwp.com/wp-content/uploads/2022/05/Rooftop-View-1-450x300.jpg" alt="">
+                        </div></div>
+                        <div class="art-text">
+                            <a class="hotel" href="#"><i class="fa-solid fa-circle"></i>HOTEL</a>
+                            <a class="sea" href="#">A Seaside Reset in Laguna Beach Mountaineer</a>
+                            <p>
+                                From the iconic to the unexpected, the city of San…</p>
+                        </div>       
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="article-box">
+                        <div class="art-image">
+                        <div class="art-img">
+                            <img src="https://modcar.travelerwp.com/wp-content/uploads/2022/05/Rooftop-View-1-450x300.jpg" alt="">
+                        </div></div>
+                        <div class="art-text">
+                            <a class="hotel" href="#"><i class="fa-solid fa-circle"></i>HOTEL</a>
+                            <a class="sea" href="#">A Seaside Reset in Laguna Beach Mountaineer</a>
+                            <p>
+                                From the iconic to the unexpected, the city of San…</p>
+                        </div>       
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="article-box">
+                        <div class="art-image">
+                        <div class="art-img">
+                            <img src="https://modcar.travelerwp.com/wp-content/uploads/2022/05/Rooftop-View-1-450x300.jpg" alt="">
+                        </div></div>
+                        <div class="art-text">
+                            <a class="hotel" href="#"><i class="fa-solid fa-circle"></i>HOTEL</a>
+                            <a class="sea" href="#">A Seaside Reset in Laguna Beach Mountaineer</a>
+                            <p>
+                                From the iconic to the unexpected, the city of San…</p>
+                        </div>       
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="article-box">
+                       <div class="art-image">
+                        <div class="art-img">
+                            <img src="https://modcar.travelerwp.com/wp-content/uploads/2022/05/Rooftop-View-1-450x300.jpg" alt="">
+                        </div></div>
+                        <div class="art-text">
+                            <a class="hotel" href="#"><i class="fa-solid fa-circle"></i>HOTEL</a>
+                            <a class="sea" href="#">A Seaside Reset in Laguna Beach Mountaineer</a>
+                            <p>
+                                From the iconic to the unexpected, the city of San…</p>
+                        </div>       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="subscribe">
+    <div class="offers">
+        <h1>Subscribe for exclusive offers and deals!</h1>
+        <div class="email d-flex justify-content-between align-items-center">
+        <input type="text" placeholder="Email Address">
+        <a href="#">Subscribe</a></div>
+    </div>
+</section>
+<footer id="footer">
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+            <ul class="m-0 p-0">
+                <li><a class="support" href="#">Support</a></li>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Our COVID-19 Response</a></li>
+                <li><a href="#">Cancellation options</a></li>
+                <li><a href="#">Safety information</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Our COVID-19 Response</a></li>
+                <li><a href="#">Cancellation options</a></li>
+                <li><a href="#">Safety information</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Our COVID-19 Response</a></li>
+                <li><a href="#">Cancellation options</a></li>
+                <li><a href="#">Safety information</a></li>
+            </ul>
+            <div class="social">
+                <p>Social</p>
+                <i id="facebook" class="fa-brands fa-facebook"></i>
+                <i id="twit" class="fa-brands fa-twitter"></i>
+                <i id="insta" class="fa-brands fa-instagram"></i>
+                <i id="youtube" class="fa-brands fa-youtube"></i>
+            </div>
+        </div>
+        <div class="footer-box d-flex justify-content-between align-items-center">
+            <p>© Copyright Traveler 2022</p>
+            <img src="https://modcar.travelerwp.com/wp-content/uploads/2022/06/Frame-3182-1.svg" alt="">
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
 
 </body>
 </html>
